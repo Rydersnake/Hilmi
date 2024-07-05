@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>📖Recipe Finder📖</h1>
+    </header>
+    <main>
+        <section class="search-bar">
+            <p>Welcome to our best application for finding recipes when you have a hard time deciding on today's menu!</p>
+            <form>
+                <input id="searchInput" type="text" placeholder="Enter meal name">
+                <select id="categoryFilter">
+                    <option value="">Select a category</option>
+                </select>
+                <button id="recipeButton" type="button">Search</button>
+            </form>
+            <nav>
+                <a href="favorite.html">Go to Favorites</a>
+            </nav>
+        </section>
+        <div class="divider"></div>
+        <section class="recipe-list">
+            <h2>Today's Meal</h2>
+            <ul id="displayMeal" class="meal-list"></ul>
+        </section>
+        <div class="divider"></div>
+        <section id="displayMealDetails" class="meal-details">
+            <!-- No heart icon -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+        </div>
+        <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

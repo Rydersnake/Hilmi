@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Kitchen';
+    src: url('/mnt/data/Kitchen.otf') format('opentype');
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fcefe3; /* light peach background */
+    color: #4a2c2a; /* dark brown text */
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.favorites {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fbe5d3; /* lighter peach */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.favorites h1 {
+    font-family: 'Kitchen', sans-serif;
+    font-size: 2.5em;
+    color: #4a2c2a; /* dark brown */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.favorite-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.favorite-list li {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1a189; /* medium brown */
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: calc(33% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.favorite-list li:hover {
+    transform: translateY(-3px);
+}
+
+.favorite-list li img {
+    margin-right: 10px;
+    max-width: 150px; /* Increased max-width to 150px */
+    max-height: 150px; /* Increased max-height to 150px */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.favorite-list li span {
+    flex: 1; /* Allow the span to take remaining space */
+    color: #4a2c2a; /* dark brown */
+}
+
+.meal-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    color: #4a2c2a; /* dark brown */
+    width: 100%; /* Make the meal details container full width */
+}
+
+.back-to-search {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #ff5a5f; /* peach */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-search:hover {
+    text-decoration: underline;
+    color: #e0827d; /* darker peach */
+}
+
+.instructions {
+    background-color: #fef5ee; /* light peach background for instructions */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4a2c2a; /* dark brown */
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effect for buttons */
+button {
+    background-color: transparent;
+    border: 1px solid #d1a189; /* Medium brown border */
+    padding: 5px 10px;
+    color: #4a2c2a; /* Dark brown text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d1a189; /* Medium brown on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Styles for the edit form */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fbe5d3; /* lighter peach background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4a2c2a; /* dark brown text */
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d1a189; /* medium brown border */
+    border-radius: 5px;
+    background-color: #fff;
+    color: #4a2c2a; /* dark brown text */
+    font-size: 1em;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: #d1a189; /* medium brown border */
+    box-shadow: 0 0 5px rgba(209, 161, 137, 0.5); /* subtle shadow effect */
+}
+
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d1a189; /* medium brown background */
+    color: #fff; /* white text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #b38570; /* darker brown on hover */
+}
+
+#displayMealDetails a.view-full-recipe {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61; /* light brown */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #ff6f61; /* matching border */
+}
+
+#displayMealDetails a.view-full-recipe:hover {
+    background-color: #e65b50; /* darker brown on hover */
+    border-color: #e65b50; /* darker brown border on hover */
+}
+

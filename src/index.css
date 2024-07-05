@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Kitchen';
+    src: url('/mnt/data/Kitchen.otf') format('opentype');
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fcefe3; /* light peach background */
+    color: #4a2c2a; /* dark brown text */
+    margin: 0;
+    padding: 0;
+    background-image: url('background-pattern.png'); /* Add background pattern */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #f5d8c0; /* light brown */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+header h1 {
+    font-family: 'Kitchen', sans-serif;
+    font-size: 2.5em;
+    color: #4a2c2a; /* dark brown */
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    background-color: #fbe5d3; /* lighter peach */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar p {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+    color: #4a2c2a; /* dark brown */
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar input[type="text"],
+.search-bar select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #d1a189; /* medium brown */
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 200px;
+}
+
+.search-bar button[type="button"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a2c2a; /* dark brown */
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Change font */
+}
+
+.search-bar button[type="button"]:hover {
+    background-color: #5c3836; /* darker brown */
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4978e; /* peach */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif; /* Change font */
+}
+
+nav a:hover {
+    background-color: #e0827d; /* darker peach */
+}
+
+.divider {
+    height: 2px;
+    background-color: #d1a189; /* medium brown */
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-list {
+    margin-top: 20px;
+}
+
+.recipe-list h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4a2c2a; /* dark brown */
+}
+
+.meal-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.meal-list li {
+    width: calc(33% - 20px);
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.meal-list li:hover {
+    transform: translateY(-3px);
+}
+
+.meal-list li img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.meal-list li:hover img {
+    transform: scale(1.05);
+}
+
+.meal-list h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #4a2c2a; /* dark brown */
+}
+
+.meal-list a {
+    text-decoration: none;
+    color: #f4978e; /* peach */
+    font-family: Arial, sans-serif; /* Change font */
+}
+
+.meal-list a:hover {
+    color: #e0827d; /* darker peach */
+}
+
+.meal-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    color: #4a2c2a; /* dark brown */
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    font-size: 1.1em; 
+    line-height: 1.6; 
+}
+
+.meal-details h3 {
+    font-size: 1.5em; 
+    color: #4a2c2a; 
+}
+
+.meal-details p {
+    font-size: 1em; 
+    margin-bottom: 10px;
+}
+
+.instructions {
+    background-color: #fef5ee; /* light peach background for instructions */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4a2c2a; /* dark brown */
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #6e534f; /* medium brown */
+}
+
+.ingredients-list li:before {
+    content: '•'; /* Bullet point */
+    color: #d1a189; /* medium brown */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+footer {
+    background-color: #4a2c2a; /* dark brown */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+}
+
+.social-media-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+.view-recipe-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #FF5733; /* Button background color */
+    color: white; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-recipe-button:hover {
+    background-color: #E64A19; /* Button background color on hover */
+}
+
+.favorite-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    border: none; /* Remove default button border */
+    border-radius: 5px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+}
+
+.favorite-button:hover {
+    background-color: #388E3C; /* Button background color on hover */
+}
